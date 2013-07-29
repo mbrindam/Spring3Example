@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>  
- <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://com/heuristictech/webservices/accountservice" xmlns:account="http://webservices.heuristictech.com" targetNamespace="http://com/heuristictech/webservices/accountservice" elementFormDefault="qualified">  
-      <xsd:import namespace="http://webservices.heuristictech.com" schemaLocation="AccountDetails.xsd"/>  
+ <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://com/mbrindam/samples/webservices/accountservice" xmlns:account="http://webservices.samples.mbrindam.com" targetNamespace="http://com/mbrindam/samples/webservices/accountservice" elementFormDefault="qualified">
+      <xsd:import namespace="http://webservices.samples.mbrindam.com" schemaLocation="AccountDetails.xsd"/>  
       <xsd:element name="AccountDetailsRequest">  
            <xsd:complexType>  
                 <xsd:sequence>  

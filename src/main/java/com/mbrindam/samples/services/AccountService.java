@@ -1,6 +1,8 @@
-package com.heuristictech.services;
+package com.mbrindam.samples.services;
 
-import com.heuristictech.webservices.Account;
+import com.mbrindam.samples.webservices.Account;
+
+
 
   
 /**  

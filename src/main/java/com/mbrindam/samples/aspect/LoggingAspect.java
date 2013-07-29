@@ -1,4 +1,4 @@
-package com.heuristictech.aspect;
+package com.mbrindam.samples.aspect;
 
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Before;
 @Aspect
 public class LoggingAspect {
 	
-	@Before("com.heuristictech.aspect.SystemArchitectureAspect.inHeuristicCore()")
+	@Before("com.mbrindam.samples.aspect.SystemArchitectureAspect.inSamples()")
 	public void logBefore(JoinPoint joinPoint) {
  
 		Logger logger = Logger.getLogger(joinPoint.getTarget().getClass());

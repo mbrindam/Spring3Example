@@ -1,8 +1,8 @@
-package com.heuristictech.services;
+package com.mbrindam.samples.services;
 import org.springframework.stereotype.Service;  
 
-import com.heuristictech.webservices.Account;
-import com.heuristictech.webservices.EnumAccountStatus;
+import com.mbrindam.samples.webservices.Account;
+import com.mbrindam.samples.webservices.EnumAccountStatus;
 
 
 /**  
@@ -24,7 +24,7 @@ public class AccountServiceImpl implements AccountService
           Account account = new Account();  
           account.setAccountNumber("12345");  
           account.setAccountStatus(EnumAccountStatus.ACTIVE);  
-          account.setAccountName("Joe Bloggs");  
+          account.setAccountName("Lucky Dogs");  
           account.setAccountBalance(3400);  
           return account;  
      }  

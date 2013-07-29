@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>  
- <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://webservices.heuristictech.com" targetNamespace="http://webservices.heuristictech.com" elementFormDefault="qualified" attributeFormDefault="unqualified">  
+ <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://webservices.samples.mbrindam.com" targetNamespace="http://webservices.samples.mbrindam.com" elementFormDefault="qualified" attributeFormDefault="unqualified">  
       <xs:element name="Account" type="Account"/>  
       <xs:complexType name="Account">  
            <xs:sequence>  
