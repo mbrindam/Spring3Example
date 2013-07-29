@@ -16,5 +16,13 @@ public class LoggingAspect {
 		logger.debug("hijacked : " + joinPoint.getSignature().getName());
 		logger.debug("******");
 	}
+	
+	public void logAfter(JoinPoint joinPoint) {
+		 
+		Logger logger = Logger.getLogger(joinPoint.getTarget().getClass());
+		logger.debug("logAfter() is running!");
+		logger.debug("hijacked : " + joinPoint.getSignature().getName());
+		logger.debug("******");
+	}
 
 }

@@ -17,11 +17,26 @@
 	<context:component-scan base-package="com.mbrindam.samples.services" />
 	<sws:annotation-driven />
 	<aop:aspectj-autoproxy />
+
+	
 	
 
 	<!-- Aspect -->
-	<bean id="logAspect" class="com.mbrindam.samples.aspect.LoggingAspect" />
-	<bean id="systemArchitectureAspect" class="com.mbrindam.samples.aspect.SystemArchitectureAspect" />
+	<bean id="logAspectBase" class="com.mbrindam.samples.aspect.LoggingAspect" />
+	<bean id="systemArchitectureAspectBase" class="com.mbrindam.samples.aspect.SystemArchitectureAspect" />
+	
+	
+	<aop:config>
+	    <aop:aspect id="systemArchitectureAspect" ref="systemArchitectureAspectBase">
+		<aop:pointcut id="inEndpoint"
+			expression="within(com.mbrindam.samples.services.endpoints..*)" />
+		</aop:aspect>
+		
+	    <aop:aspect id="logAspect" ref="logAspectBase">
+	        <aop:before pointcut-ref="inEndpoint" method="logAfter"/>
+	    </aop:aspect>
+	</aop:config>
+	
 	<!--
 		Our test service bean
 	-->
